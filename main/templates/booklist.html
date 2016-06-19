@@ -8,29 +8,28 @@
 
 <body>
 hello booklist
-<!--
 <div class="container">
 <div class="panel panel-default">
 <div class="panel-heading">Host List</div>
 <div class="panel-body">
-	<p>there are {{ keys|length }} keys in cmdb </p>
+	<p>there are {{ books|length }} books in cmdb </p>
+
 </div>
 <table border="1" class="table table-condensed">
 <tr>
-<th>key shortname</th>
-<th>key</th>
+<th>book_name</th>
+<th>time_buying</th>
 
 </tr>
-{% for k in keys %}
+{% for b in books %}
         <tr>
-                <th>{{ k.key_shortname }} </th>
-                <th>{{ k.key }} </th>
+                <th>{{ b.book_name }} </th>
+                <th>{{ b.time_buying }} </th>
         </tr>
 {% endfor %}
 </table>
 
 </body>
--->
 </div>
 </html>
 
